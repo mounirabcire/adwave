@@ -85,3 +85,83 @@ body {
 .nav__link.active {
     color: #fff;
 }
+
+/* Hero */
+.header__hero {
+    margin-top: 7.2rem;
+    text-align: center;
+    line-height: 1;
+}
+
+.header__main-heading {
+    margin-bottom: 2.4rem;
+}
+
+.header__main-heading--top {
+    font-weight: 300;
+    font-size: 4rem;
+}
+
+.header__main-heading--bottom {
+    font-size: 12rem;
+}
+
+.header__subheading {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.btn {
+    padding: 2.4rem 6.2rem;
+    margin-top: 4rem;
+    color: #fff;
+    font-size: 1.8rem;
+    background-color: #180023;
+    border: 2px solid #b925ff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 13.19px #b925ff52;
+    cursor: pointer;
+    transition: background-color 0.5s ease, box-shadow 0.3s linear;
+}
+
+.btn:hover {
+    background-color: #b925ff;
+    box-shadow: 5px 5px 50px #b925ff52;
+}
+
+.header__clients {
+    margin-top: 6.8rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__client {
+    padding: 2.4rem;
+    background-color: #66019670;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    transition: background-color 0.5s ease, box-shadow 0.3s linear,
+        border 0.5s ease;
+}
+
+.header__client:hover {
+    background-color: #7100A7;
+    box-shadow: 5px 5px 25px #b925ff52;
+    border: 2px solid #b925ff;
+}
+
+.header__client img {
+    width: 11.5rem;
+}
+
+.header__client-number {
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+
+.header__client-text {
+    color: rgba(255, 255, 255, 0.4);
+}
