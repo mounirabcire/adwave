@@ -208,7 +208,7 @@ body {
     display: flex;
 }
 
-.home__about__details-box:not(:last-child){
+.home__about__details-box:not(:last-child) {
     margin-right: 7rem;
 }
 
@@ -280,6 +280,117 @@ body {
     z-index: 5;
 }
 
-.home__about__btn-box{
+.home__about__btn-box {
     text-align: center;
+}
+
+/* OUR SERVICES */
+.home__services__boxes {
+    margin-top: 3.2rem;
+}
+
+.home__services__box {
+    padding: 7rem;
+    background-color: #240b31;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(to right, #ab1dee00, #ab1dee, #ab1dee00);
+    border-image-slice: 1;
+}
+
+.home__services__box::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    transition: background 0.8s ease;
+}
+
+.home__services__box:hover::after {
+    background-color: #ac1deea2;
+}
+
+.home__services__box:hover .home__services__box-img {
+    transform: translateY(0);
+}
+
+.home__services__box:hover .home__services__box-subheading {
+    transform: scale(1.5);
+}
+
+.home__services__box:hover .home__services__box-heading {
+    transform: scale(1.2);
+}
+
+.home__services__box:hover .home__services__box-text {
+    transform: scale(1.1);
+}
+
+.home__services__box-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+
+.home__services__box-subheading {
+    font-size: 3.2rem;
+    position: relative;
+    z-index: 5;
+    transition: transform 0.5s ease;
+}
+
+.home__services__box-subheading::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: #ab1dee;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.5s ease;
+}
+
+.home__services__box-heading {
+    font-size: 6rem;
+    position: relative;
+    z-index: 5;
+    transition: transform 0.5s ease;
+}
+
+.home__services__box-text {
+    width: 30%;
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.4);
+    position: relative;
+    z-index: 5;
+    transition: transform 0.5s ease;
+}
+
+.home__services-btn {
+    padding: 2.1rem;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    position: relative;
+    z-index: 5;
+    transition: transform 0.5s ease;
+}
+
+.home__services-btn:hover {
+    transform: scale(1.2);
 }
