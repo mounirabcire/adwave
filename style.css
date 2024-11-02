@@ -394,3 +394,72 @@ body {
 .home__services-btn:hover {
     transform: scale(1.2);
 }
+
+/* OUR WROK */
+.home__work {
+    margin-top: 3.2rem;
+}
+
+.home__work__cards .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 13rem;
+    row-gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.home__work__card {
+    margin-top: 2.4rem;
+    padding: 0.4rem;
+    max-width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+}
+
+.home__work__card:hover .home__work__card-img {
+    transform: translateY(-27px);
+}
+
+.home__work__card:hover .home__work__card-heading--top {
+    transform: translate(-50%, -27px);
+}
+
+.home__work__card:hover .home__work__card-heading--bottom {
+    opacity: 1;
+    visibility: visible;
+}
+
+.home__work__card-img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 4px solid #b925ff;
+    box-shadow: 0px 0px 13.19px #b925ff52;
+    transition: transform 0.5s ease;
+}
+
+.home__work__card-heading {
+    position: relative;
+}
+
+.home__work__card-heading--top {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.5s ease;
+}
+
+.home__work__card-heading--bottom {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.4);
+    text-wrap: nowrap;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
