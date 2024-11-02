@@ -16,6 +16,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     font-size: 1.8rem;
+    overflow-x: hidden;
 }
 
 /* ***CONTAINER **** */
@@ -111,7 +112,7 @@ body {
 }
 
 .btn {
-    padding: 2.4rem 6.2rem;
+    padding: 1.6rem 6.2rem;
     margin-top: 4rem;
     color: #fff;
     font-size: 1.8rem;
@@ -148,7 +149,7 @@ body {
 }
 
 .header__client:hover {
-    background-color: #7100A7;
+    background-color: #7100a7;
     box-shadow: 5px 5px 25px #b925ff52;
     border: 2px solid #b925ff;
 }
@@ -164,4 +165,121 @@ body {
 
 .header__client-text {
     color: rgba(255, 255, 255, 0.4);
+}
+
+.main {
+    margin-top: 5rem;
+    /* overflow-x: hidden; */
+}
+
+/* WHO ARE WE */
+.secondary-heading__container {
+    height: 400px;
+    position: relative;
+}
+
+.secondary-heading--big {
+    font-size: 19vw;
+    text-wrap: nowrap;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.secondary-heading--normal {
+    text-align: center;
+    font-size: 9.5rem;
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.secondary-heading--highlight {
+    border-left: 7px solid #ff3aff;
+    border-right: 7px solid #ff3aff;
+    background-color: #ab1dee;
+}
+
+.home__about__details {
+    display: flex;
+}
+
+.home__about__details-box:not(:last-child){
+    margin-right: 7rem;
+}
+
+.home__about__details-box:hover .home__about__detail-box::after {
+    transform: translateY(0);
+}
+
+.home__about__details-box:hover .home__about__detail-box {
+    padding: 0 2.4rem 3.2rem;
+    transform: translateY(-15px);
+}
+
+.home__about__details-box:hover .home__about__detail-year {
+    transform: translateY(-1px);
+}
+
+.home__about__detail-year {
+    font-size: 7rem;
+    font-weight: 500;
+    transform: translateY(16px);
+    text-align: center;
+    transition: transform 1.2s ease;
+}
+
+.home__about__detail-box {
+    padding: 0 1.6rem 2.4rem;
+    width: 45rem;
+    height: 20rem;
+    border: 4px solid #ab1dee;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, #190024e7, #190024de),
+        url('assets/laptop.jpg');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+    transition: transform 1.2s ease, padding 0.8s ease;
+}
+
+.home__about__detail-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ba25ff34;
+    transform: translateY(100%);
+    transition: transform 1.2s ease;
+}
+
+.home__about__detail-heading {
+    margin-bottom: 0.8rem;
+    font-size: 3.2rem;
+    font-weight: 500;
+    position: relative;
+    z-index: 5;
+}
+
+.home__about__detail-text {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    z-index: 5;
+}
+
+.home__about__btn-box{
+    text-align: center;
 }
