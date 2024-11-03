@@ -494,3 +494,62 @@ h2.home__client__secondary-heading {
     transform: scale(1.1);
     background-color: #7100a7;
 }
+
+/* CONTACT US */
+.home__contact {
+    margin-top: 3.2rem;
+    padding-bottom: 12rem;
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(to right, #ab1dee00, #ab1dee, #ab1dee00);
+    border-image-slice: 1;
+}
+
+.home__contact__box {
+    margin-top: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.home__contact__right,
+.home__contact__left {
+    flex: 1;
+}
+
+.home__contact__img {
+    width: 85%;
+    object-fit: cover;
+}
+
+.home__contact__text {
+    margin: 1.6rem 0 2.4rem;
+    width: 60%;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.home__contact__form {
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.home__contact__form input,
+.home__contact__form textarea {
+    padding: 1.6rem;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 1.6rem;
+    background-color: #2a192a;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.home__contact__form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+.home__contact__form button {
+    margin: 0;
+    align-self: flex-end;
+}
