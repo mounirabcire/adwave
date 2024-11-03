@@ -400,7 +400,7 @@ body {
     margin-top: 3.2rem;
 }
 
-.home__work__cards .container{
+.home__work__cards .container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -462,4 +462,35 @@ body {
     left: 50%;
     transform: translateX(-50%);
     transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* OUR CLIENTS */
+
+.home__clients {
+    margin-top: 3.2rem;
+}
+
+h2.home__client__secondary-heading {
+    top: 0;
+}
+
+.home__client__logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3.8rem;
+}
+
+.home__client__logo-box {
+    padding: 0.8rem;
+    background-color: #66019670;
+    border: 2px solid #ab1dee;
+    border-radius: 7px;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.home__client__logo-box:hover {
+    transform: scale(1.1);
+    background-color: #7100a7;
 }
