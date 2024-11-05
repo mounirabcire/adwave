@@ -504,6 +504,10 @@ h2.home__client__secondary-heading {
     border-image-slice: 1;
 }
 
+.home__contact.contact__contact {
+    margin-top: 20rem;
+}
+
 .home__contact__box {
     margin-top: 2.4rem;
     display: flex;
@@ -638,4 +642,159 @@ h2.home__client__secondary-heading {
 
 .footer__highlight {
     color: #fff;
+}
+
+/* **** CONTACT PAGE **** */
+.contact__location {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.contact__location--right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.contact__location__heading--text {
+    font-size: 3.2rem;
+}
+
+.contact__location__text {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.conatct__location__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.contact__location__phone-box,
+.contact__location__mail-box {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 0.8rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ab1dee;
+    box-shadow: 0px 0px 20px #b925ff52;
+}
+
+.contact__location__sm {
+    margin-top: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.contact__location__sm > span {
+    display: inline-block;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ab1dee82;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.contact__location__sm > span:hover {
+    transform: scale(1.2);
+    background-color: #ab1dee;
+    box-shadow: 0px 0px 20px #b925ff52;
+}
+
+/* **** ABOUT PAGE **** */
+.about__about {
+    margin-top: 20rem;
+}
+
+.about__team {
+    margin-top: 3.2rem;
+}
+
+.about__team__cards {
+    margin-top: 5rem;
+    display: flex;
+    gap: 8rem;
+}
+
+.about__team__card {
+    width: 60rem;
+}
+
+.about__team__card__headings {
+    width: calc(60rem - 50%);
+    margin-bottom: 0.8rem;
+    transform: translateX(50%);
+    position: relative;
+}
+
+.about__team__card__headings::after {
+    content: '';
+    width: 45%;
+    height: 5px;
+    background-color: #ab1dee;
+    box-shadow: 0px 0px 20px #b925ff52;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 7px;
+    right: 0;
+}
+
+.about__team__card__headings::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #ab1dee;
+    box-shadow: 0px 0px 20px #b925ff52;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+}
+
+.about__team__card__headings > h2 {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+}
+
+.about__team__card__headings > h4 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 2rem;
+}
+
+.about__team__card-img {
+    height: 40rem;
+    transform: translateY(-26%);
+}
+
+.about__team__card--detaild {
+    height: 30rem;
+    background-color: #180023;
+    border: 5px solid #ab1dee;
+    border-radius: 7px;
+    border-image: linear-gradient(to top, #ab1dee00, #ab1dee, #ab1dee00);
+    border-image-slice: 2;
+    display: flex;
+}
+
+.about__team__card--container {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about__team__card-position {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.7);
 }
