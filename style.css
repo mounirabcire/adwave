@@ -392,6 +392,14 @@ body {
     border-left: 7px solid #ff3aff;
     border-right: 7px solid #ff3aff;
     background-color: #ab1dee;
+    position: relative;
+}
+
+.secondary-heading--follow {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -80%) scale(0.7);
 }
 
 @media (max-width: 768px) {
@@ -417,6 +425,12 @@ body {
     .secondary-heading--normal {
         font-size: 5rem;
         top: 70px;
+    }
+    .secondary-heading--follow {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -70%) scale(0.5);
     }
 }
 
@@ -867,6 +881,12 @@ h2.home__client__secondary-heading {
     flex-wrap: wrap;
 }
 
+.home__contact__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .home__contact__right,
 .home__contact__left {
     flex: 1;
@@ -881,6 +901,13 @@ h2.home__client__secondary-heading {
     display: inline-block;
     width: 90%;
     object-fit: cover;
+}
+
+.home__contact__img2 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(17%, -50%) scale(0.75);
 }
 
 .home__contact__left::after {
@@ -908,6 +935,10 @@ h2.home__client__secondary-heading {
     z-index: 5;
 }
 
+.home__contact__heading {
+    width: 60%;
+}
+
 .home__contact__text {
     margin: 1.6rem 0 2.4rem;
     width: 60%;
@@ -915,7 +946,7 @@ h2.home__client__secondary-heading {
 }
 
 .home__contact__form {
-    width: 35rem;
+    width: 60%;
     display: flex;
     flex-direction: column;
 }
@@ -969,6 +1000,10 @@ h2.home__client__secondary-heading {
     .home__contact__form button {
         padding: 1rem 2rem;
     }
+
+    .home__contact__img2 {
+        transform: translate(17%, -50%) scale(0.6);
+    }
 }
 
 @media (max-width: 768px) {
@@ -999,6 +1034,10 @@ h2.home__client__secondary-heading {
     .home__contact__form button {
         align-self: center;
     }
+
+    .home__contact__img2 {
+        transform: translate(10%, -50%) scale(0.8);
+    }
 }
 
 @media (max-width: 480px) {
@@ -1027,6 +1066,10 @@ h2.home__client__secondary-heading {
 
     .home__contact__form button {
         padding: 0.8rem 1.6rem;
+    }
+
+    .home__contact__img2 {
+        transform: translate(17%, -40%) scale(0.55);
     }
 }
 
@@ -1699,11 +1742,9 @@ h2.home__client__secondary-heading {
         align-self: center;
     }
 
-    
-.header__lineImg--2 {
-    top: 100px;
-}
-
+    .header__lineImg--2 {
+        top: 100px;
+    }
 }
 
 @media (max-width: 480px) {
