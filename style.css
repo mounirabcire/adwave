@@ -8,6 +8,7 @@
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 @media (max-width: 1200px) {
@@ -451,6 +452,12 @@ body {
     padding: 0 2rem;
     display: flex;
     gap: 7rem;
+    user-select: none;
+}
+
+.home__about__details.dragging {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
 }
 
 .home__about__details-box:hover .home__about__detail-box::after {
@@ -1402,6 +1409,12 @@ h2.home__client__secondary-heading {
     margin-top: 5rem;
     display: flex;
     gap: 8rem;
+    user-select: none;
+}
+
+.about__team__cards.dragging {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
 }
 
 .about__team__card {
@@ -1801,10 +1814,16 @@ h2.home__client__secondary-heading {
     margin-top: 8rem;
 }
 
+.whyus__boxes.dragging {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+}
+
 .whyus__boxes {
     padding: 2rem;
     display: flex;
     gap: 3rem;
+    user-select: none;
 }
 
 .whyus__box {
@@ -1914,47 +1933,32 @@ h2.home__client__secondary-heading {
 
 .animated-circle {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
     background-color: #ab1dee;
-    border-radius: 50%;
+    border-radius: 100%;
     filter: blur(60px);
-    opacity: 0.4;
-    pointer-events: none;
-    animation: moveAround 10s infinite ease-in-out;
-    z-index: -1;
-}
-
-.animated-circle {
-    position: fixed;
-    width: 250px;
-    height: 250px;
-    background-color: #ab1dee;
-    border-radius: 50%;
-    filter: blur(60px);
-    opacity: 0.4;
+    opacity: 0.2;
     pointer-events: none;
     z-index: -1;
 }
 
 .circle-left {
-    left: -20%;
+    left: 50%;
     top: 50%;
     transform: translateY(-50%);
     animation: moveLeft 18s infinite ease-in-out;
 }
 
 .circle-top {
-    top: -20%;
+    top: 80%;
     left: 50%;
     transform: translateX(-50%);
     animation: moveTop 20s infinite ease-in-out;
 }
 
 .circle-bottom {
-    bottom: -20%;
+    bottom: 0%;
     left: 30%;
     transform: translateX(-50%);
     animation: moveBottom 22s infinite ease-in-out;
