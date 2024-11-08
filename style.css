@@ -166,7 +166,6 @@ body {
 @media (max-width: 576px) {
     .nav {
         padding: 1rem;
-        backdrop-filter: blur(10px);
     }
     .nav__link {
         font-size: 1.4rem;
