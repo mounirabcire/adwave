@@ -846,6 +846,7 @@ h2.home__client__secondary-heading {
 }
 
 .home__client__logos {
+    padding: 1.6rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -854,11 +855,26 @@ h2.home__client__secondary-heading {
 }
 
 .home__client__logo-box {
+    width: 22rem;
+    height: 8rem;
     padding: 0.8rem;
     background-color: #66019670;
     border: 2px solid #ab1dee;
     border-radius: 7px;
     transition: background-color 0.5s ease, transform 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__client__logo {
+    transform: scale(0.8);
+}
+
+.home__client__logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .home__client__logo-box:hover {
@@ -1320,6 +1336,11 @@ h2.home__client__secondary-heading {
 }
 
 @media (max-width: 768px) {
+    .contact__location__mail-box,
+    .contact__location__phone-box {
+        margin: 0 auto;
+    }
+
     .contact__location--left img {
         display: block;
         margin: 0 auto;
@@ -1418,7 +1439,7 @@ h2.home__client__secondary-heading {
 }
 
 .about__team__card {
-    width: 60rem;
+    width: 90rem;
 }
 
 .about__team__card__headings {
@@ -1426,6 +1447,15 @@ h2.home__client__secondary-heading {
     margin-bottom: 0.8rem;
     transform: translateX(50%);
     position: relative;
+}
+
+.about__team__card--container .contact__location__sm {
+    padding: 0.8rem;
+}
+
+.about__team__card--container .contact__location__sm > span {
+    width: 3rem;
+    height: 3rem;
 }
 
 .about__team__card__headings::after {
@@ -1518,10 +1548,6 @@ h2.home__client__secondary-heading {
     .about__team__card-img {
         height: 35rem;
     }
-
-    .about__team__card--detaild {
-        height: 25rem;
-    }
 }
 
 @media (max-width: 768px) {
@@ -1545,10 +1571,6 @@ h2.home__client__secondary-heading {
 
     .about__team__card-img {
         height: 30rem;
-    }
-
-    .about__team__card--detaild {
-        height: 20rem;
     }
 
     .about__team__card-position {
@@ -1577,10 +1599,6 @@ h2.home__client__secondary-heading {
 
     .about__team__card-img {
         height: 25rem;
-    }
-
-    .about__team__card--detaild {
-        height: 18rem;
     }
 
     .about__team__card-position {
